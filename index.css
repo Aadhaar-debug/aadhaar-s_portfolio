@@ -1,0 +1,443 @@
+.root {
+  background-color: #2b1934;
+  align-items: center;
+  /* justify-content: center; */
+  display: flex;
+  height:185vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0vh;
+}
+.hangingPlant {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  margin-right: 135vh;
+  width: 400px; /* Set the width of your image */
+  height: 400px; /* Set the height of your image */
+}
+
+.hangingPlant img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+  filter: sepia(1) hue-rotate(255deg) saturate(4); /* Tint effect */
+}
+
+
+.navbar{
+  position: fixed;
+  height: 10vh;
+  width: 80vh;
+  margin-top: 2vh;
+  border-radius: 50px;
+  transition: 1000ms;
+  display: flex;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:rgb(198, 83, 221);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-content a
+{
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Use the same color as the parent element */
+  /* font-weight: bold;  */
+  height: 6vh;
+  width: 14vh;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Bigtitle
+{
+  height: 15vh;
+  font-size: 8vh;
+  display: flex;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:rgb(198, 83, 221);
+  align-items: start;
+  margin-top: 15vh;
+  margin-right: 79vh;
+  position: relative;
+}
+.subtitle1{
+  height: 5vh;
+  position: relative;
+  color:rgb(130, 62, 142);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3vh;
+  margin-right: 98vh;
+}
+.subtitle2{
+  height: 28vh;
+  position: relative;
+  display: flex;
+  color:rgb(213, 155, 223);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3vh;
+  margin-right: 20vh;
+  margin-top: 0vh;
+  margin-left: 25vh;
+}
+.avatar
+{
+  position: relative;
+  margin-left: 10vh;
+  margin-bottom: 20vh;
+  margin-top:-5vh ;
+}
+.design1
+{
+  height: 40vh;
+  width: 40vh;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color:rgb(130, 62, 142);
+  align-items: end;
+  margin-top: 70vh;
+  margin-right: 137vh;
+  /* border-radius: 50px; */
+  position: fixed;
+}
+.chat {
+  position: fixed;
+  height: 8vh;
+  width: 35vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(130, 62, 142);
+  align-items: center; /* Vertically centers content inside the chat box */
+  display: flex; /* Aligning items horizontally */
+  justify-content: center; /* Centers the content */
+  margin-bottom: 0vh;
+  margin-left: 150vh;
+  border-radius: 100px;
+}
+
+/* Styling the WhatsApp Icon */
+.chat .fa-whatsapp {
+  font-size: 40px; /* Size of the icon */
+  color: white; /* Icon color */
+  margin-right: 2vh; /* Spacing within the chat box */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect: Change color to WhatsApp green */
+.chat .fa-whatsapp:hover {
+  color: #25D366; /* WhatsApp green */
+}
+.design2
+{
+  position: fixed;
+  height: 25vh;
+  width: 36vh;
+  background-color:rgb(130, 62, 142);
+  margin-left: 140vh;
+
+}
+.social-icon {
+  display: flex;
+  position: relative;
+  flex-direction: row; /* Aligns the icons in a row */
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Adds space between the icons */
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease;
+  margin-top: 0vh;
+  margin-right: 95vh;
+}
+
+.social-icon a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.social-icon a:hover {
+  color: rgb(130, 62, 142); /* Hover effect */
+}
+.fa-instagram {
+  margin-top: 0vh;
+  margin-right: 140vh;
+  position: relative;
+  font-size: 30px; /* Increased the size */
+  color: white; /* Set the color to white */
+  transition: color 0.3s ease;
+}
+
+/* Optional hover effect */
+.fa-instagram:hover {
+  color: rgb(130, 62, 142); /* Change color on hover */
+}
+
+
+/* Instagram Position */
+.fa-instagram {
+  margin-top: 0vh;
+  margin-right: 5vh;
+}
+
+/* GitHub Position */
+.fa-github {
+  margin-top: 0vh;
+  margin-right: 5vh;
+}
+
+/* LinkedIn Position */
+.fa-linkedin {
+  margin-top: 0vh;
+  margin-right: 5vh;
+}
+
+/* YouTube Position */
+.fa-youtube {
+  margin-top: 0vh;
+  margin-right: 5vh;
+}
+
+/* LeetCode (Custom SVG) Position */
+.leetcode-icon {
+  width: 30px; /* Adjusted size to match font-awesome icons */
+  height: 30px;
+  fill: rgb(255, 255, 255);
+  transition: fill 0.3s ease;
+  position: relative;
+  margin-top: 0vh;
+  margin-right: 5vh;
+}
+
+.leetcode-icon:hover {
+  fill: rgb(252, 252, 252); /* Hover effect */
+}
+
+.fotter
+{
+  position: fixed;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:transparent ;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(130, 62, 142);
+  margin-top: 85vh;
+  margin-left: 0vh;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+  
+  .root{
+    height:185vh;
+  }
+  .hangingPlant {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    margin-right: 0vh;
+    margin-left: 10vh;
+    margin-top: 0vh;
+    width: 30vh; /* Set the width of your image */
+    height: 90vh; /* Set the height of your image */
+    transform: scaleX(-1); /* Horizontal flip */
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+    font-size: 16px; /* Reduce font size */
+    /* padding: 8px; Adjust padding */
+  }
+  .nav-content 
+  {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Use the same color as the parent element */
+    /* font-weight: bold;  */
+    height: 6vh;
+    width: 10vh;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Bigtitle
+  {
+    font-size: 40px;
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(198, 83, 221);
+    align-items: start;
+    margin-right: 45vh;
+    margin-left: 5vh;
+    margin-top: 10vh;
+    width: 3vh;
+    justify-content: space-around;
+  }
+  .subtitle2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color:rgb(213, 155, 223);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-right: 5vh;
+    margin-top: 0vh;
+    margin-left: 5vh;
+  }
+ 
+  .avatar
+  {
+    position: relative;
+    margin-left: 1vh;
+    margin-top: 2vh;
+    height: 100px;
+    width: 100px;
+  }
+  .avatar img {
+    width: 300px;  /* Change width here */
+    height: 320px; /* Change height here */
+    border-radius: 25px; /* Rounded corners */
+    object-fit: cover;   /* Maintain aspect ratio if necessary */
+    transition: all 0.3s ease-in-out; /* Smooth transition when size changes */
+  }
+  .chat {
+    position: fixed;
+    height: 7vh;
+    width: 18vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(130, 62, 142);
+    align-items: center; /* Vertically centers content inside the chat box */
+    display: flex; /* Aligning items horizontally */
+    justify-content: center; /* Centers the content */
+    margin-bottom: 103vh;
+    margin-left: 42vh;
+    margin-right: 9vh;
+    margin-top: 90vh;
+    border-radius: 100px;
+    transition: 3000ms;
+  }
+  
+  /* Styling the WhatsApp Icon */
+  .chat .fa-whatsapp {
+    color: inherit; /* Use the same color as the parent element */
+    font-size: 30px; /* Size of the icon */
+    color: white; /* Icon color */
+    margin-right: 2vh; /* Spacing within the chat box */
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect: Change color to WhatsApp green */
+  .chat .fa-whatsapp:hover {
+    color: inherit; /* Use the same color as the parent element */
+    color: #25D366; /* WhatsApp green */
+  }
+  .fotter
+  {
+    position: fixed;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color:transparent ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(130, 62, 142);
+    margin-top: 90vh;
+    margin-right: 0vh;
+  
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60vh;
+    margin-right: 0vh;
+    margin-top: 20vh;
+    height: 0vh; /* Adjust height */
+    max-width: 200px; /* Constrain to max width of 500px */
+    width: 7vh; /* Let it adjust for smaller screens */
+  }
+  
+  .social-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; /* Distribute icons evenly */
+    font-size: 30px; /* Set the size to 30px */
+    color: white; /* White color */
+    transition: color 0.3s ease;
+    width: 100%;
+  }
+  
+  .social-icon a {
+    margin-top: 70vh;
+    color: white; /* Ensure all icons start white */
+    text-decoration: none; /* Remove underline from the links */
+  }
+  
+  .social-icon a:hover {
+    color: rgb(130, 62, 142); /* Hover effect for all icons */
+  }
+  
+  .fa-instagram, .fa-github, .fa-linkedin, .fa-youtube {
+    font-size: 30px; /* Size for all Font Awesome icons */
+    transition: color 0.3s ease;
+  }
+  
+  .leetcode-icon {
+    width: 30px; /* Adjusted size to match Font Awesome icons */
+    height: 30px;
+    fill: rgb(255, 255, 255);
+    transition: fill 0.3s ease;
+  }
+  
+  .leetcode-icon:hover {
+    fill: rgb(130, 62, 142); /* Hover effect for LeetCode icon */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

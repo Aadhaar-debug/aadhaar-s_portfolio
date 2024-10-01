@@ -1,0 +1,337 @@
+.root {
+  background-color: #2b1934;
+  align-items: center;
+  /* justify-content: center; */
+  display: flex;
+  height:400vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0vh;
+}
+.navbar{
+    position: fixed;
+  height: 10vh;
+  width: 80vh;
+  margin-top: 2vh;
+  border-radius: 50px;
+  transition: 1000ms;
+  display: flex;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:rgb(198, 83, 221);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-content a
+{
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Use the same color as the parent element */
+  /* font-weight: bold;  */
+  height: 6vh;
+  width: 14vh;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Bigtitle
+{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    height: 50vh;
+    width: .25vh;
+    color: white;
+    margin-right: 40vh;
+    margin-top: 20vh;
+    background-color: white;
+}
+.subtitle1{
+  position: relative;
+  color:rgb(130, 62, 142);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3vh;
+  margin-right: 0vh;
+  margin-top: 26vh;
+}
+.subtitle2{
+  display: flex;
+  position: relative;
+  color:rgb(213, 155, 223);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3vh;
+  margin-right: 85vh;
+  margin-top: 0vh;
+  margin-left: 25vh;
+}
+.projects
+{
+    background-color: #2b1934;
+    height: 200vh;
+    width:95vh;
+    display: flex;
+    margin-left: 4vh;
+    flex-direction: column;
+
+}
+.aProject1
+{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction:row;
+}
+.aProject
+{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction:row;
+}
+.image-container
+{
+    height: 50vh;
+    width: 100vh;
+    background-color: #2b1934;
+    display: flex;
+    flex-direction: row;
+    margin-left: 4vh;
+}
+
+.content-container
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vh;
+    margin-top: 2vh;
+    color: white;
+    background-color: #2b1934;
+    width: 40vh;
+    height: 50vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.design1
+{
+  height: 40vh;
+  width: 40vh;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color:rgb(130, 62, 142);
+  align-items: end;
+  margin-top: 70vh;
+  margin-right: 137vh;
+  /* border-radius: 50px; */
+  position: fixed;
+}
+
+.design2
+{
+  position: fixed;
+  height: 25vh;
+  width: 36vh;
+  background-color:rgb(130, 62, 142);
+  margin-left: 140vh;
+
+}
+
+.fotter
+{
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#c4bec7 ;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(130, 62, 142);
+  position: relative;
+
+}
+.chat
+{
+  
+  height: 8vh;
+  width: 35vh;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(130, 62, 142);
+  align-items: center; /* Vertically centers content inside the chat box */
+  display: flex; /* Aligning items horizontally */
+  justify-content: center; /* Centers the content */
+  margin-bottom: 0vh;
+  margin-left: 150vh;
+  font-size: 20px;
+  border-radius: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) 
+{
+    .root {
+        background-color: #2b1934;
+        align-items: center;
+        /* justify-content: center; */
+        display: flex;
+        height:400vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0vh;
+      }
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh;
+        font-size: 16px; /* Reduce font size */
+        /* padding: 8px; Adjust padding */
+      }
+      .nav-content 
+      {
+        text-decoration: none; /* Remove underline from link */
+        color: inherit; /* Use the same color as the parent element */
+        /* font-weight: bold;  */
+        height: 6vh;
+        width: 10vh;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .Bigtitle
+      {
+          display: flex;
+          flex-direction: row;
+          align-items: start;
+          justify-content: space-around;
+          height: 50vh;
+          width: .25vh;
+          color: white;
+          margin-right: 40vh;
+          margin-top: 20vh;
+          background-color: white;
+      }
+      .subtitle1{
+        display: none;
+      }
+      .subtitle2{
+        display: none;
+
+      }
+      .projects
+      {
+          background-color: #2b1934;
+          height: 200vh;
+          width:62vh;
+          display: flex;
+          margin-left: 3vh;
+          flex-direction: column;
+          margin-bottom:10vh ;
+      
+      }
+      .aProject1
+      {
+          margin-top: 20vh;
+          display: flex;
+          flex-direction:row;
+      }
+      .aProject
+      {
+          margin-top: 20vh;
+          display: flex;
+          flex-direction:row;
+      }
+      .image-container
+      {
+        display: flex;
+        height: 50vh;
+        width: 0vh;
+        background-color: #2b1934;
+        display: flex;
+        flex-direction: row;
+        margin-left: 5vh;
+      }
+      
+      .content-container
+      {
+        display: none;
+      }
+      .design1
+      {
+        display: none;
+
+      }
+      
+      .design2
+      {
+        display: none;
+
+      
+      }
+      
+      .fotter
+      {
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:#2b1934 ;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(130, 62, 142);
+        margin-top: 20vh;
+        margin-left: 0vh;
+      
+      }
+      .chat {
+        position: fixed;
+        height: 7vh;
+        width: 18vh;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgb(130, 62, 142);
+        align-items: center; /* Vertically centers content inside the chat box */
+        display: flex; /* Aligning items horizontally */
+        justify-content: center; /* Centers the content */
+        margin-bottom: 103vh;
+        margin-left: 42vh;
+        margin-right: 9vh;
+        border-radius: 100px;
+        transition: 3000ms;
+      }
+      
+      /* Styling the WhatsApp Icon */
+      .chat .fa-whatsapp {
+        color: inherit; /* Use the same color as the parent element */
+        font-size: 30px; /* Size of the icon */
+        color: white; /* Icon color */
+        margin-right: 2vh; /* Spacing within the chat box */
+        transition: color 0.3s ease;
+      }
+      
+      /* Hover effect: Change color to WhatsApp green */
+      .chat .fa-whatsapp:hover {
+        color: inherit; /* Use the same color as the parent element */
+      }
+      
+}
