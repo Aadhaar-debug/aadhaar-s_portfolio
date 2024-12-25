@@ -3,7 +3,7 @@
   align-items: center;
   /* justify-content: center; */
   display: flex;
-  height:185vh;
+  height:850vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -83,7 +83,7 @@
   font-size: 3vh;
   margin-right: 20vh;
   margin-top: 0vh;
-  margin-left: 25vh;
+  margin-left: 33vh;
 }
 .avatar
 {
@@ -91,6 +91,7 @@
   margin-left: 10vh;
   margin-bottom: 20vh;
   margin-top:-5vh ;
+  perspective: 1000px;
 }
 .design1
 {
@@ -113,23 +114,24 @@
   align-items: center; /* Vertically centers content inside the chat box */
   display: flex; /* Aligning items horizontally */
   justify-content: center; /* Centers the content */
-  margin-bottom: 0vh;
-  margin-left: 150vh;
+  margin-bottom: 1520vh;
+  margin-left: 140vh;
   border-radius: 100px;
 }
 
-/* Styling the WhatsApp Icon */
-.chat .fa-whatsapp {
+/* Styling the Gmail Icon (Envelope) */
+.chat .fa-envelope {
   font-size: 40px; /* Size of the icon */
   color: white; /* Icon color */
   margin-right: 2vh; /* Spacing within the chat box */
   transition: color 0.3s ease;
 }
 
-/* Hover effect: Change color to WhatsApp green */
-.chat .fa-whatsapp:hover {
-  color: #25D366; /* WhatsApp green */
+/* Hover effect: Change color when hovered */
+.chat .fa-envelope:hover {
+  color: #D44638; /* Gmail red */
 }
+
 .design2
 {
   position: fixed;
@@ -214,11 +216,39 @@
 .leetcode-icon:hover {
   fill: rgb(252, 252, 252); /* Hover effect */
 }
+.experiences-container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  width: 90vh;
+  height: 10vh;
+  background-color: transparent;
+  margin-left: 10vh;
+  margin-top: 15vh;
+}
+
+.experience
+{
+  height: 60vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5vh;
+  margin-left: 0vh;
+  width: 100%;
+}
+
+
+
+
 
 .fotter
 {
-  position: fixed;
-  height: 15vh;
+  background-color: #25D366;
+  position: relative;
+  height: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,7 +256,7 @@
   background-color:transparent ;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: rgb(130, 62, 142);
-  margin-top: 85vh;
+  margin-bottom: 20vh;
   margin-left: 0vh;
 
 }
@@ -265,8 +295,8 @@
     margin-right: 0vh;
     margin-left: 10vh;
     margin-top: 0vh;
-    width: 30vh; /* Set the width of your image */
-    height: 90vh; /* Set the height of your image */
+    width: 50vh; /* Set the width of your image */
+    height: 80vh; /* Set the height of your image */
     transform: scaleX(-1); /* Horizontal flip */
   }
   
@@ -383,7 +413,7 @@
     align-items: center;
     margin-left: 60vh;
     margin-right: 0vh;
-    margin-top: 20vh;
+    margin-top: 30vh;
     height: 0vh; /* Adjust height */
     max-width: 200px; /* Constrain to max width of 500px */
     width: 7vh; /* Let it adjust for smaller screens */

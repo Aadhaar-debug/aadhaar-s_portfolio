@@ -2,11 +2,46 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="icon" type="image/png" href="/avatar.png">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
     <title>Aadhaar Portfolio</title>
+    <style>
+      @keyframes slideInFromRight {
+          0% {
+              transform: translateX(100%);
+              opacity: 0;
+          }
+          100% {
+              transform: translateX(0);
+              opacity: 1;
+          }
+      }
+      .tech-icons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            max-width: 80vh;
+            height: 10vh;
+            margin: 0px auto; /* Reduced vertical margin for less spacing */
+            /* justify-content: space-between; */
+        }
+        .tech-icons i {
+            font-size: 4rem; /* Increased font size slightly */
+            margin-top: 15vh;
+            margin-left: 05vh;
+            transition: transform 0.2s;
+        }
+        .tech-icons i:hover {
+            transform: scale(1.2); /* Scale effect on hover */
+        }
+    </style>
   </head>
   <body style="margin: 0;background-color: #2b1934;">
     <div class="root" >
@@ -24,17 +59,21 @@
 
       <div class="design2"></div>
 
-      <div class="Bigtitle">
+      <div class="Bigtitle" style=" opacity: 0; transform: translateX(100%); animation: slideInFromRight 1s ease-out .5s forwards;">
         <p>AADHAAR KOUL</p>
       </div>
-      <div class="subtitle1"><p>CS Engineer and Game developer</p></div>
+      <div class="subtitle1" style=" opacity: 0; transform: translateX(100%); animation: slideInFromRight 1.5s ease-out 1s forwards;"><p>CS Engineer and Game developer</p></div>
       <div class="subtitle2">
         <p>
           Recent B.Tech graduate in Computer Science, eager to apply my skills in a wide range of tech roles. My experience spans data analysis, software development and innovative projects. I'm driven by a passion for learning and problem-solving, ready to take on new challenges and contribute to dynamic teams. Open to opportunities across the tech landscape
         </p>
-        <div class="avatar" >
-          <img src="/avatar.png" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;">
-        </div>
+
+      <div class="avatar" style="position: relative; width: 400px; height: 400px;">
+        <img src="/avatar.png" alt="Avatar Image" width="400" height="400" style="border-radius: 25px; 
+            transition: transform 0.1s ease; /* Faster transition */ 
+            box-shadow: 0 0 20px rgba(200, 74, 214, 0.6), 0 0 40px rgba(200, 74, 214, 0.6);">
+    </div>
+
       </div>
       <div class="design1"></div>  
 
@@ -61,31 +100,246 @@
   
         </div>
       </div>
+
+      <div style="margin-top: 15vh;color:rgb(130, 62, 142);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 2vh;opacity: 0; transform: translateX(-100%); animation: slideInFromRight 3s ease-out 1s forwards;">
+        <div style="margin-left: 39vh;height: 2vh;"><p>Previously worked for</p></div>
+        <div style="display: flex; justify-content: space-around; align-items: center; margin-left: 3vh;width: 90vh;">
+          <!-- Google Logo -->
+          <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" width="150">
+          </div>
+          
+          <!-- Oracle Logo -->
+          <div>
+            <img src="https://logos-world.net/wp-content/uploads/2020/09/Oracle-Logo.png" alt="Oracle Logo" width="150">
+          </div>
+          
+          <!-- Linode Logo -->
+          <div>
+            <img src="/logo/linode.png" alt="Linode Logo" width="150">
+          </div>          
+          
+        </div>
+      </div>
+
+
+
+      <div class="experiences-container"></div>
+        <div style="height: 15vh; font-size: 8vh; display: flex; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(198, 83, 221); align-items: start; margin-top: 10vh; margin-right: -1vh;">
+          Skills
+      </div>
+      <!-- First Row -->
+    <div class="tech-icons">
+      <i class="devicon-python-plain colored"></i>
+      <i class="devicon-cplusplus-plain colored"></i>
+      <i class="devicon-javascript-plain colored"></i>
+      <i class="devicon-react-original colored"></i>
+      <i class="devicon-java-plain colored"></i>
+      <i class="devicon-linux-plain colored"></i>
+      <i class="devicon-figma-plain colored"></i>
+  </div>
+
+  <!-- Second Row -->
+  <div class="tech-icons" style="margin-top: 10vh;">
+      
+    <i class="devicon-git-plain colored"></i>
+    <i class="devicon-unrealengine-plain colored"></i>
+  <i class="devicon-vuejs-plain colored"></i>
+  <i class="devicon-dot-net-plain colored"></i>
+  <i class="devicon-django-plain colored"></i>
+      <i class="devicon-azure-plain colored"></i>
+      <i class="devicon-csharp-plain colored"></i>
+  </div>
+
+  <!-- Third Row -->
+  <div class="tech-icons" style="margin-top: 10vh;">
+    
+    <i class="devicon-github-plain colored"></i>
+    <i class="devicon-arduino-plain colored"></i>
+    <i class="devicon-c-plain colored"></i>
+    <i class="devicon-css3-plain colored"></i>
+    <i class="devicon-html5-plain colored"></i>
+    <i class="devicon-raspberrypi-plain colored"></i>
+    <i class="devicon-mongodb-plain colored"></i>
+  </div>
+
   
+
+
+      
+
+      <div class="experiences-container">
+        <div style="height: 15vh; font-size: 8vh; display: flex; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(198, 83, 221); align-items: start; margin-top: 14vh; margin-right: 70vh;">
+          Experience
+      </div>
+        <div class="experience">
+          <div style="font-size: 25px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: rgb(198, 83, 221);margin-top: 30vh;">2024</div>
+          <div style="display: flex;flex-direction: column;">
+            <div style="width: 1vh;display: flex;flex-direction: column;height: 1vh;margin-top: 3vh;border-radius: 50px;margin-left: 4vh;background-color: rgb(204, 95, 231);"></div>
+            <div style="width: 1vh;display: flex;flex-direction: column;margin-top: 3vh;height: 60vh;border-radius: 50px;margin-left: 4vh;background-color: rgb(204, 95, 231);"></div>
+          </div>
+          <div style="height: 50vh;width: 80vh;margin-top: 0vh;margin-left: 5vh;background-color: transparent;">
+            <p style="color:rgb(204, 95, 231);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 4vh;height: 1vh;">
+              Data Analyst Intern
+            </p>
+            <p style="color:rgb(204, 95, 231);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 2vh;">
+              Oracle , Mumbai
+            </p>
+            <p style="color:rgb(213, 155, 223);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 2vh;;">
+              Application developed using Oracle Application Express and Oracle 11g database to 
+              maintain all the records and details of the Projects handled by the Team. Task are
+              allocated to the members using the portal as well as maintaining the daily basis status of 
+              the Projects. Include other features like Leave Management, User Ratings, Feedback and 
+              Support.          
+            </p>
+            <p style="color:rgb(204, 95, 231);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 2vh;;">
+              Responsibilities        
+            </p>
+            <div style="color:rgb(213, 155, 223);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 2vh;;">
+              <p>- Oracle APEX development and UI design (Interactive Reports, Charts, Dynamic 
+              Actions, Tabular Form, Authorization, Authentication, External Plug-In).
+              </p>- System Design and Database Design. Backup and Restoring Applications.
+              <!-- <p>- Unit Testing.</p>  -->
+              <p>- Responsible for analyzing data requirement and writing complex Oracle PL/SQL 
+                code & SQL queries.</p> 
+              <p>- Creating PL/SQL packages, functions, stored procedures and database schema 
+                diagrams</p>           
+            </div>
+          </div>
+        
+        </div>
+        <div class="experience">
+          <div style="font-size: 25px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: rgb(198, 83, 221);margin-top: 30vh;">2022</div>
+          <div style="display: flex;flex-direction: column;">
+            <div style="width: 1vh;display: flex;flex-direction: column;height: 1vh;margin-top: 3vh;border-radius: 50px;margin-left: 4vh;background-color: rgb(204, 95, 231);"></div>
+            <div style="width: 1vh;display: flex;flex-direction: column;margin-top: 3vh;height: 50vh;border-radius: 50px;margin-left: 4vh;background-color: rgb(204, 95, 231);"></div>
+          </div>
+          <div style="height: 50vh;width: 80vh;margin-top: 1vh;margin-left: 5vh;background-color: transparent;">
+            <p style="color:rgb(204, 95, 231);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 4vh;height: 01vh;">
+              Project and research Intern
+            </p>
+            <p style="color:rgb(204, 95, 231);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 2vh;;">
+              MIET , Jammu
+            </p>
+            <p style="color:rgb(213, 155, 223);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 2vh;;">
+              Developed a shared learning-based cyber hygiene tool using Federated Learning Models, enhancing 
+              cybersecurity measures through features like URL parsing, site blacklisting, sandboxing, and smart threat alerts.
+              Engineered a SaaS application to automate the URL parsing process, resulting in a 30% efficiency boost, and filed a 
+              patent for the innovative and sustainable concept.
+                      
+            </p>
+            <p style="color:rgb(204, 95, 231);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 2vh;;">
+              Responsibilities        
+            </p>
+            <div style="color:rgb(213, 155, 223);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 2vh;;">
+              <p>- Software architecture and framework designing
+              </p>- Federated Learning based AI Agent programming.
+              <p>- Unit Testing and deployment.</p> 
+              <p>- URL parsing and safe content delivery across all distributions.</p> 
+              <p>- Formulating a unique approach to reduce end user processing and server loads.</p>           
+            </div>
+          </div>
+        
+        </div>
+        <div class="experience">
+          <div style="font-size: 25px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: rgb(198, 83, 221);margin-top: 30vh;">2021</div>
+          <div style="display: flex;flex-direction: column;">
+            <div style="width: 1vh;display: flex;flex-direction: column;height: 1vh;margin-top: 3vh;border-radius: 50px;margin-left: 4vh;background-color: rgb(204, 95, 231);"></div>
+            <div style="width: 1vh;display: flex;flex-direction: column;margin-top: 3vh;height: 50vh;border-radius: 50px;margin-left: 4vh;background-color: rgb(204, 95, 231);"></div>
+          </div>
+          <div style="height: 50vh;width: 80vh;margin-top: 5vh;margin-left: 5vh;background-color: transparent;">
+            <p style="color:rgb(204, 95, 231);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 4vh;height: 1vh;">
+              Android Facilitator
+            </p>
+            <p style="color:rgb(204, 95, 231);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 2vh;;">
+              MIET , Jammu
+            </p>
+            <p style="color:rgb(213, 155, 223);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 2vh;;">
+              Spearheaded collaboration with GDSC teams across multiple colleges, leading to the successful organization 
+              of 5+ technical hackathons that fostered collaboration and teamwork.
+              Delivered Android Kotlin workshops to over 200 students, directly contributing to elevating the college’s GDSC 
+              ranking to the top tier.      
+            </p>
+            <p style="color:rgb(204, 95, 231);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 2vh;;">
+              Responsibilities        
+            </p>
+            <div style="color:rgb(213, 155, 223);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 2vh;;">
+              <p>- Organized 4 Kotlin Workshops.
+              </p>- Host interactive coding events.
+              <p>- Collaborate on informative team meetups across india.</p> 
+              <p>- Compete for Tier 1 college status across india.</p>            
+            </div>
+          </div>
+        </div>
+
+
+
+
+        
+        <div style="height:0vh; font-size: 8vh; display: flex; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(198, 83, 221); align-items: start; margin-top: 14vh; margin-right: 62vh;">
+          Certifications
+      </div>
+      <div style="height: 15vh; font-size: 2vh; display: flex; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(198, 83, 221); align-items: start; margin-top: 14vh; margin-right: 62vh;">
+        <div>
+          <a href="https://www.cloudskillsboost.google/public_profiles/05b87178-cd36-4a2a-be25-c4a40361439b/badges/3433890"><img src="/certs/5.png" alt="Avatar Image" width="650" height="150" style="margin-top: 3vh;margin-left: 60vh;border-radius: 25px; 
+            transition: transform 0.1s ease; /* Faster transition */ box-shadow: 0 0 20px rgba(200, 74, 214, 0.6), 0 0 40px rgba(200, 74, 214, 0.6);"></a>
+          <a href="https://elearning.securityblue.team/home/certificate/531208502"><img src="/certs/2.png" alt="Avatar Image" width="650" height="150" style="margin-top: 3vh;margin-left: 60vh;border-radius: 25px; 
+          transition: transform 0.1s ease; /* Faster transition */ box-shadow: 0 0 20px rgba(200, 74, 214, 0.6), 0 0 40px rgba(200, 74, 214, 0.6);"></a>
+          <a href="https://codered.eccouncil.org/certificate/633b381c-6258-48a2-8fef-23dcba19892b"><img src="/certs/17.png" alt="Avatar Image" width="650" height="150" style="margin-top: 3vh;margin-left: 60vh;border-radius: 25px; 
+            transition: transform 0.1s ease; /* Faster transition */ box-shadow: 0 0 20px rgba(200, 74, 214, 0.6), 0 0 40px rgba(200, 74, 214, 0.6);"></a>
+          <a href="https://coursera.org/verify/Z5UH29X77QG8"><img src="/certs/6.png" alt="Avatar Image" width="650" height="150" style="margin-top: 3vh;margin-left: 60vh;border-radius: 25px; 
+            transition: transform 0.1s ease; /* Faster transition */ box-shadow: 0 0 20px rgba(200, 74, 214, 0.6), 0 0 40px rgba(200, 74, 214, 0.6);"></a>
+          <a href="https://www.linkedin.com/learning/certificates/4f7e88391b65d53077b2d80a44b73713095a78f2484fa33730b553efa4567516?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BdppkjDZuTe6zxWTOhAJkNw%3D%3D"><img src="/certs/7.png" alt="Avatar Image" width="650" height="150" style="margin-top: 3vh;margin-left: 60vh;border-radius: 25px; 
+            transition: transform 0.1s ease; /* Faster transition */ box-shadow: 0 0 20px rgba(200, 74, 214, 0.6), 0 0 40px rgba(200, 74, 214, 0.6);"></a>
+          <a href="https://coursera.org/verify/SK2K33ZJGNHD"><img src="/certs/8.png" alt="Avatar Image" width="650" height="150" style="margin-top: 3vh;margin-left: 60vh;border-radius: 25px; 
+            transition: transform 0.1s ease; /* Faster transition */ box-shadow: 0 0 20px rgba(200, 74, 214, 0.6), 0 0 40px rgba(200, 74, 214, 0.6);"></a>
+          <a href="https://www.hackerrank.com/certificates/4ba89b588c4b"><img src="/certs/9.png" alt="Avatar Image" width="650" height="150" style="margin-top: 3vh;margin-left: 60vh;border-radius: 25px; 
+            transition: transform 0.1s ease; /* Faster transition */ box-shadow: 0 0 20px rgba(200, 74, 214, 0.6), 0 0 40px rgba(200, 74, 214, 0.6);"></a>
+          <a href="https://coursera.org/share/73cb9d8acd4d74bbe6ebc99e7e9d0a0f"><img src="/certs/10.png" alt="Avatar Image" width="650" height="150" style="margin-top: 3vh;margin-left: 60vh;border-radius: 25px; 
+            transition: transform 0.1s ease; /* Faster transition */ box-shadow: 0 0 20px rgba(200, 74, 214, 0.6), 0 0 40px rgba(200, 74, 214, 0.6);"></a>
+          <a href="https://courses.mietjammu.skillsnetwork.site/certificates/5c23c00975eb443a86860ed47c540e51"><img src="/certs/11.png" alt="Avatar Image" width="650" height="150" style="margin-top: 3vh;margin-left: 60vh;border-radius: 25px; 
+            transition: transform 0.1s ease; /* Faster transition */ box-shadow: 0 0 20px rgba(200, 74, 214, 0.6), 0 0 40px rgba(200, 74, 214, 0.6);"></a>
+          <a href="https://courses.mietjammu.skillsnetwork.site/certificates/bf314b46403a4034958e8afdc18646ea"><img src="/certs/12.png" alt="Avatar Image" width="650" height="150" style="margin-top: 3vh;margin-left: 60vh;border-radius: 25px; 
+            transition: transform 0.1s ease; /* Faster transition */ box-shadow: 0 0 20px rgba(200, 74, 214, 0.6), 0 0 40px rgba(200, 74, 214, 0.6);"></a>
+          <a href="https://www.hackerrank.com/certificates/93d6e4bf94f4"><img src="/certs/15.png" alt="Avatar Image" width="650" height="150" style="margin-top: 3vh;margin-left: 60vh;border-radius: 25px; 
+            transition: transform 0.1s ease; /* Faster transition */ box-shadow: 0 0 20px rgba(200, 74, 214, 0.6), 0 0 40px rgba(200, 74, 214, 0.6);"></a>
+          <a href="https://coursera.org/verif%20y/ZH76SAPPR35J"><img src="/certs/16.png" alt="Avatar Image" width="650" height="150" style="margin-top: 3vh;margin-left: 60vh;border-radius: 25px; 
+            transition: transform 0.1s ease; /* Faster transition */ box-shadow: 0 0 20px rgba(200, 74, 214, 0.6), 0 0 40px rgba(200, 74, 214, 0.6);"></a>
+          <a href="https://coursera.org/verify/KM3QGU6QE5NQ"><img src="/certs/3.png" alt="Avatar Image" width="650" height="150" style="margin-top: 3vh;margin-left: 60vh;border-radius: 25px; 
+            transition: transform 0.1s ease; /* Faster transition */ box-shadow: 0 0 20px rgba(200, 74, 214, 0.6), 0 0 40px rgba(200, 74, 214, 0.6);"></a>
+        </div>
+      </div>
+
+      
+    </div>
+    </div>
+
+    
+      
+  
+    
 
       
 
 
-      <div class="fotter">
-        <div class="chat" id="whatsapp_redirect" >
-          <i class="fab fa-whatsapp"></i>
+    <div class="fotter">
+      <div class="chat" id="gmail_redirect">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aadhaarkoul2002@gmail.com" style="text-decoration: none; color: white;">
+          <i class="fas fa-envelope"></i></a>
           <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(255, 255, 255);">
-            Lets Chat
+            Let's Chat
           </div>
-        </div>
-      <p>Aadhaar2024</p>
+      </div>             
     </div>
 
-        
+       
+    <div class="fotter">Aadhaar2024</div>
+
+
     </div>
     
   </body>
-  <script>
-    document.getElementById('whatsapp_redirect').addEventListener('click', function() {
-      const url = 'https://wa.me/+916005846156" target="_blank'; 
-      window.location.href = url;
-    });
-  </script>
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </html>
