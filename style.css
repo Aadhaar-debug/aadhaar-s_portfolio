@@ -1,0 +1,818 @@
+.root {
+  background-color: #2b1934;
+  align-items: center;
+  /* justify-content: center; */
+  display: flex;
+  height:830vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0vh;
+}
+.hangingPlant {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  margin-right: 135vh;
+  width: 400px; /* Set the width of your image */
+  height: 400px; /* Set the height of your image */
+}
+
+.hangingPlant img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+  filter: sepia(1) hue-rotate(255deg) saturate(4); /* Tint effect */
+}
+
+
+.navbar{
+  position: fixed;
+  height: 10vh;
+  width: 80vh;
+  margin-top: 2vh;
+  border-radius: 50px;
+  transition: 1000ms;
+  display: flex;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:rgb(198, 83, 221);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-content a
+{
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Use the same color as the parent element */
+  /* font-weight: bold;  */
+  height: 6vh;
+  width: 14vh;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Bigtitle
+{
+  height: 15vh;
+  font-size: 8vh;
+  display: flex;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:rgb(198, 83, 221);
+  align-items: start;
+  margin-top: 15vh;
+  margin-right: 79vh;
+  position: relative;
+}
+.subtitle1{
+  height: 5vh;
+  position: relative;
+  color:rgb(130, 62, 142);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3vh;
+  margin-right: 98vh;
+}
+.subtitle2{
+  height: 28vh;
+  position: relative;
+  display: flex;
+  color:rgb(213, 155, 223);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3vh;
+  margin-right: 20vh;
+  margin-top: 0vh;
+  margin-left: 33vh;
+}
+.avatar
+{
+  position: relative;
+  margin-left: 10vh;
+  margin-bottom: 20vh;
+  margin-top:-5vh ;
+  perspective: 1000px;
+}
+.design1
+{
+  height: 40vh;
+  width: 40vh;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color:rgb(130, 62, 142);
+  align-items: end;
+  margin-top: 70vh;
+  margin-right: 137vh;
+  /* border-radius: 50px; */
+  position: fixed;
+}
+.chat {
+  position: fixed;
+  height: 10vh;
+  width: 38vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(130, 62, 142);
+  align-items: center; /* Vertically centers content inside the chat box */
+  display: flex; /* Aligning items horizontally */
+  justify-content: center; /* Centers the content */
+  margin-bottom: 1475vh;
+  margin-left: 142vh;
+  border-radius: 100px;
+}
+
+/* Styling the Gmail Icon (Envelope) */
+.chat .fa-envelope {
+  font-size: 40px; /* Size of the icon */
+  color: white; /* Icon color */
+  margin-right: 2vh; /* Spacing within the chat box */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect: Change color when hovered */
+.chat .fa-envelope:hover {
+  color: #D44638; /* Gmail red */
+}
+
+.design2
+{
+  position: fixed;
+  height: 25vh;
+  width: 36vh;
+  background-color:rgb(130, 62, 142);
+  margin-left: 140vh;
+
+}
+.social-icon {
+  display: flex;
+  position: relative;
+  flex-direction: row; /* Aligns the icons in a row */
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Adds space between the icons */
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease;
+  margin-top: 0vh;
+  margin-right: 95vh;
+}
+
+.social-icon a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.social-icon a:hover {
+  color: rgb(130, 62, 142); /* Hover effect */
+}
+.fa-instagram {
+  margin-top: 0vh;
+  margin-right: 140vh;
+  position: relative;
+  font-size: 30px; /* Increased the size */
+  color: white; /* Set the color to white */
+  transition: color 0.3s ease;
+}
+
+/* Optional hover effect */
+.fa-instagram:hover {
+  color: rgb(130, 62, 142); /* Change color on hover */
+}
+
+
+/* Instagram Position */
+.fa-instagram {
+  margin-top: 0vh;
+  margin-right: 5vh;
+}
+
+/* GitHub Position */
+.fa-github {
+  margin-top: 0vh;
+  margin-right: 5vh;
+}
+
+/* LinkedIn Position */
+.fa-linkedin {
+  margin-top: 0vh;
+  margin-right: 5vh;
+}
+
+/* YouTube Position */
+.fa-youtube {
+  margin-top: 0vh;
+  margin-right: 5vh;
+}
+
+/* LeetCode (Custom SVG) Position */
+.leetcode-icon {
+  width: 30px; /* Adjusted size to match font-awesome icons */
+  height: 30px;
+  fill: rgb(255, 255, 255);
+  transition: fill 0.3s ease;
+  position: relative;
+  margin-top: 0vh;
+  margin-right: 5vh;
+}
+
+.leetcode-icon:hover {
+  fill: rgb(252, 252, 252); /* Hover effect */
+}
+.experiences-container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  width: 90vh;
+  height: 10vh;
+  background-color: transparent;
+  margin-left: 10vh;
+  margin-top: 15vh;
+}
+
+.experience
+{
+  height: 60vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5vh;
+  margin-left: 0vh;
+  width: 100%;
+}
+
+
+
+/* From Uiverse.io by gharsh11032000 */ 
+.form-container {
+  width: 600px;
+  height: 51vh;
+  background: linear-gradient(#e46bbc, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  margin-left: 8vh;
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+/* From Uiverse.io by zanina-yassine */ 
+.modal {
+  width: 550px;
+  background: linear-gradient(180deg, #DCF9E0 0%, #FFFFFF 30.21%);
+  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+.banner {
+  width: 100%;
+  height: 30px;
+  margin: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  color: #2B2B2F;
+  margin-bottom: 15px;
+}
+
+.description {
+  max-width: 80%;
+  margin: auto;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  color: #5F5D6B;
+}
+
+.tab-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+  padding: 2px;
+  background-color: #ebebec;
+  border-radius: 9px;
+  margin: 10px 20px 0px 20px;
+}
+
+.indicator {
+  content: "";
+  width: 50%;
+  height: 28px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 9;
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 7px;
+  transition: all 0.2s ease-out;
+}
+
+.tab {
+  width: 50%;
+  height: 28px;
+  position: relative;
+  z-index: 99;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  flex: none;
+  align-self: stretch;
+  flex-grow: 1;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tab--1:hover ~ .indicator {
+  left: 2px;
+}
+
+.tab--2:hover ~ .indicator {
+  left: calc(50% - 2px);
+}
+
+.benefits {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.benefits > span {
+  font-size: 15px;
+  color: #2B2B2F;
+  font-weight: 700;
+}
+
+.benefits ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.benefits ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.benefits ul li span {
+  font-weight: 600;
+  font-size: 12px;
+  color: #5F5D6B;
+}
+
+.modal--footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-top: 1px solid #ebebec;
+}
+
+.price {
+  position: relative;
+  font-size: 32px;
+  color: #2B2B2F;
+  font-weight: 900;
+}
+
+.price sup {
+  font-size: 13px;
+}
+
+.price sub {
+  width: fit-content;
+  position: absolute;
+  font-size: 11px;
+  color: #5F5D6B;
+  bottom: 5px;
+  display: inline-block;
+}
+
+.upgrade-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 215px;
+  height: 40px;
+  background: #0bdd12;
+  box-shadow: 0px 0.5px 0.5px #EFEFEF, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
+  border-radius: 7px;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.upgrade-btn:hover {
+  background-color: #07b90d;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  width: 550px;
+  height: 321px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+  margin-top:-2vh ;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+}
+
+.card:hover .overlay {
+  transform: scale(4) translateZ(0);
+}
+
+.card:hover .circle {
+  border-color: var(--bg-color-light);
+  background: var(--bg-color);
+}
+
+.card:hover .circle:after {
+  background: var(--bg-color-light);
+}
+
+.card:hover p {
+  color: var(--text-color-hover);
+}
+
+.card p {
+  font-size: 17px;
+  color: #4c5656;
+  margin-top: 30px;
+  z-index: 1000;
+  transition: color 0.3s ease-out;
+}
+
+.circle {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+
+.circle:after {
+  content: "";
+  width: 118px;
+  height: 118px;
+  display: block;
+  position: absolute;
+  background: var(--bg-color);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+  transition: opacity 0.3s ease-out;
+}
+
+.circle svg {
+  z-index: 10000;
+  transform: translateZ(0);
+}
+
+.overlay {
+  width: 118px;
+  position: absolute;
+  height: 118px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  top: 100px;
+  left: 50px;
+  z-index: 0;
+  transition: transform 0.3s ease-out;
+  margin-left: 23vh;
+}
+
+
+
+
+
+.fotter
+{
+  background-color: #25D366;
+  position: relative;
+  height: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:transparent ;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(130, 62, 142);
+  margin-bottom: 20vh;
+  margin-left: 0vh;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+  
+  .root{
+    height:185vh;
+  }
+  .hangingPlant {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    margin-right: 0vh;
+    margin-left: 10vh;
+    margin-top: 0vh;
+    width: 50vh; /* Set the width of your image */
+    height: 80vh; /* Set the height of your image */
+    transform: scaleX(-1); /* Horizontal flip */
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+    font-size: 16px; /* Reduce font size */
+    /* padding: 8px; Adjust padding */
+  }
+  .nav-content 
+  {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Use the same color as the parent element */
+    /* font-weight: bold;  */
+    height: 6vh;
+    width: 10vh;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Bigtitle
+  {
+    font-size: 40px;
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(198, 83, 221);
+    align-items: start;
+    margin-right: 45vh;
+    margin-left: 5vh;
+    margin-top: 10vh;
+    width: 3vh;
+    justify-content: space-around;
+  }
+  .subtitle2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color:rgb(213, 155, 223);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-right: 5vh;
+    margin-top: 0vh;
+    margin-left: 5vh;
+  }
+ 
+  .avatar
+  {
+    position: relative;
+    margin-left: 1vh;
+    margin-top: 2vh;
+    height: 100px;
+    width: 100px;
+  }
+  .avatar img {
+    width: 300px;  /* Change width here */
+    height: 320px; /* Change height here */
+    border-radius: 25px; /* Rounded corners */
+    object-fit: cover;   /* Maintain aspect ratio if necessary */
+    transition: all 0.3s ease-in-out; /* Smooth transition when size changes */
+  }
+  .chat {
+    position: fixed;
+    height: 7vh;
+    width: 18vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(130, 62, 142);
+    align-items: center; /* Vertically centers content inside the chat box */
+    display: flex; /* Aligning items horizontally */
+    justify-content: center; /* Centers the content */
+    margin-bottom: 103vh;
+    margin-left: 42vh;
+    margin-right: 9vh;
+    margin-top: 90vh;
+    border-radius: 100px;
+    transition: 3000ms;
+  }
+  
+  /* Styling the WhatsApp Icon */
+  .chat .fa-whatsapp {
+    color: inherit; /* Use the same color as the parent element */
+    font-size: 30px; /* Size of the icon */
+    color: white; /* Icon color */
+    margin-right: 2vh; /* Spacing within the chat box */
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect: Change color to WhatsApp green */
+  .chat .fa-whatsapp:hover {
+    color: inherit; /* Use the same color as the parent element */
+    color: #25D366; /* WhatsApp green */
+  }
+  .fotter
+  {
+    position: fixed;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color:transparent ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(130, 62, 142);
+    margin-top: 90vh;
+    margin-right: 0vh;
+  
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60vh;
+    margin-right: 0vh;
+    margin-top: 30vh;
+    height: 0vh; /* Adjust height */
+    max-width: 200px; /* Constrain to max width of 500px */
+    width: 7vh; /* Let it adjust for smaller screens */
+  }
+  
+  .social-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; /* Distribute icons evenly */
+    font-size: 30px; /* Set the size to 30px */
+    color: white; /* White color */
+    transition: color 0.3s ease;
+    width: 100%;
+  }
+  
+  .social-icon a {
+    margin-top: 70vh;
+    color: white; /* Ensure all icons start white */
+    text-decoration: none; /* Remove underline from the links */
+  }
+  
+  .social-icon a:hover {
+    color: rgb(130, 62, 142); /* Hover effect for all icons */
+  }
+  
+  .fa-instagram, .fa-github, .fa-linkedin, .fa-youtube {
+    font-size: 30px; /* Size for all Font Awesome icons */
+    transition: color 0.3s ease;
+  }
+  
+  .leetcode-icon {
+    width: 30px; /* Adjusted size to match Font Awesome icons */
+    height: 30px;
+    fill: rgb(255, 255, 255);
+    transition: fill 0.3s ease;
+  }
+  
+  .leetcode-icon:hover {
+    fill: rgb(130, 62, 142); /* Hover effect for LeetCode icon */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

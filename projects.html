@@ -5,9 +5,158 @@
     <link rel="icon" type="image/png" href="/avatar.png">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
+       
+.shopp {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(240, 15%, 9%);
+  --paragraph: hsl(0, 0%, 83%);
+  --line: hsl(240, 9%, 17%);
+  --primary: hsl(266, 92%, 58%);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(255, 255, 255);
+  padding: 1rem;
+  width: 14rem;
+  background-color: hsla(240, 15%, 9%, 1);
+  background-image: radial-gradient(
+      at 88% 40%,
+      hsla(240, 15%, 9%, 1) 0px,
+      transparent 85%
+    ),
+    radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+    radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+    radial-gradient(at 0% 64%, hsla(263, 93%, 56%, 1) 0px, transparent 85%),
+    radial-gradient(at 41% 94%, hsla(284, 100%, 84%, 1) 0px, transparent 85%),
+    radial-gradient(at 100% 99%, hsla(306, 100%, 57%, 1) 0px, transparent 85%);
+
+  border-radius: 25px;
+  box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
+}
+
+.shopp .shopp__border {
+  overflow: hidden;
+  pointer-events: none;
+
+  position: absolute;
+  z-index: -10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(255, 255, 255);
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  background-image: linear-gradient(
+    0deg,
+    hsl(283, 100%, 49%) -50%,
+    hsl(0, 0%, 40%) 100%
+  );
+
+  border-radius: 25px;
+}
+
+.shopp .shopp__border::before {
+  content: "";
+  pointer-events: none;
+
+  position: fixed;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%), rotate(0deg);
+  transform-origin: left;
+
+  width: 200%;
+  height: 10rem;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.shopp .shopp_title__container .shopp_title {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.shopp .shopp_title__container .shopp_paragraph {
+  margin-top: 0.25rem;
+  width: 65%;
+
+  font-size: 0.5rem;
+  color: var(--paragraph);
+}
+
+.shopp .line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--line);
+
+  border: none;
+}
+
+.shopp .shopp__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.shopp .shopp__list .shopp__list_item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.shopp .shopp__list .shopp__list_item .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--primary);
+
+  border-radius: 50%;
+}
+
+.shopp .shopp__list .shopp__list_item .check .check_svg {
+  width: 0.75rem;
+  height: 0.75rem;
+
+  fill: var(--black);
+}
+
+.shopp .shopp__list .shopp__list_item .list_text {
+  font-size: 0.75rem;
+  color: var(--white);
+}
+
+.shopp .button {
+  cursor: pointer;
+
+  padding: 0.5rem;
+  width: 100%;
+  background-image: linear-gradient(
+    0deg,
+    rgba(94, 58, 238, 1) 0%,
+    rgba(197, 107, 240, 1) 100%
+  );
+
+  font-size: 0.75rem;
+  color: var(--white);
+
+  border: 0;
+  border-radius: 9999px;
+  box-shadow: inset 0 -2px 25px -4px var(--white);
+}
+
         button {
         width: 165px;
         height: 62px;
@@ -41,7 +190,7 @@
     </style>
   </head>
   <body style="margin: 0;background-color: #2b1934;">
-    <div class="root" style="height: 520vh;" >
+    <div class="root" style="height: 530vh;" >
 
         <div class="hangingPlant" >
             <img src="/hangingPlant.png" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;">
@@ -51,16 +200,19 @@
       <div class="navbar">
         <div class="nav-content"><a href="index.html">HOME</a></div>
         <div class="nav-content"><a href="projects.html">PROJECTS</a></div>
-        <div class="nav-content"><a href="">BLOG</a></div>
+        <div class="nav-content"><a href="https://medium.com/@aadhaarkoul2002">BLOG</a></div>
         <div class="nav-content"><a href="https://drive.google.com/file/d/1c1GnLWI_xO5UTdc3MOEuxrSKEmStSgTf/view?usp=sharing">RESUME</a></div>
       </div>
 
       
 
-      <div class="design2"></div>
+      <div class="design2"></div> 
+      
+      
+      
 
-    <div class="subtitle1" style="color:rgb(198, 83, 221);font-size: 8vh; margin-left: 55vh; margin-top: 20vh;">
-        <p>In the Running</p>
+    <div class="subtitle1" style="color:rgb(198, 83, 221);font-size: 8vh; margin-left: 55vh; margin-top:10vh;">
+        <p>In The Running</p>
     </div>
     <div class="subtitle2"></div>
     <div class="design1"></div>  
@@ -68,19 +220,19 @@
     
 
 
-    <div class="projects" style="margin-left: 0vh;" >
+    <div class="projects" style="margin-left: 0vh;margin-top: -15vh;" >
+        
             <div class="image-container" style="display: flex;flex-direction: row; width: 30vh;margin-left: -45vh;margin-top: 5vh;">
                 <img src="/dalle.jpg" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;margin-left: 0vh;">
             <div class="content-container" ">
                 <div class="subtitle1" style="color:rgb(198, 83, 221);font-size: 4vh; margin-left: 2vh; margin-top: 0vh; width: 40vh;">
-                    <p>Kavach - SOTA IDS Framework</p>
+                    <p>Kavach - Cyber Hygiene Tool</p>
                     <p style="font-size: 3vh; color: rgb(130, 62, 142);">
-                        loremipsumbkb ergdfbvasf asfgadfrh adfbh adfhb adfh adfh adfh adfh adf hadfsh
-                         fgh afgh loremipsumbkb ergdfbvasf asfgadfrh adfbh adfhb adfh adfh adfh adfh adf hadfsh
-                         fgh afgh 
+                      KAVACH is an AI agent preventing malicious activity on networks/browsers. Built with Python, JavaScript,
+                       and jQuery; frontend in HTML, CSS, Bootstrap; AI components use Python, JavaScript, and neural networks. 
                     </p>
                     <button>
-                        view more
+                        <a href="https://github.com/Aadhaar-debug/Cyber_Hygiene_Tool">View More</a>
                     </button>
                 </div>
             </div>
@@ -88,38 +240,37 @@
 
 
             <div class="image-container" style="display: flex;flex-direction: row; width: 30vh;margin-left: -45vh;margin-top: 5vh;">
-                <div class="content-container" ">
+                <div class="content-container"  >
                     <p style="margin-right: 3vh;">
                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                        color:rgb(198, 83, 221);font-size: 4vh; margin-left: 2vh; margin-top: 0vh; width: 35vh;">
-                       Kavach - SOTA IDS Framework</p>
+                       Pingfence - IDS for Home Automation Systems</p>
                        <p style="font-size: 3vh; color: rgb(130, 62, 142);">
-                        loremipsumbkb ergdfbvasf asfgadfrh adfbh adfhb adfh adfh adfh adfh adf hadfsh
-                         fgh afgh loremipsumbkb ergdfbvasf asfgadfrh adfbh adfhb adfh adfh adfh adfh adf hadfsh
-                         fgh afgh 
+                        An intrusion detection and automation system that uses  technology such as Honeypot technology, 
+                        and Neural Networks to accurately detect and classify intrusions in the network as well as the lodging. 
                     </p>
                     <button>
-                        view more
-                    </button>
+                      <a href="https://github.com/Aadhaar-debug/SOTA_IDS_Framework_Pingfence">View More</a>
+                  </button>
                     </p>
                 </div>
-                <img src="/skincancer.png" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;margin-right: 10vh;">
+                <img src="/DALL·E 2025-02-26 22.42.01 - A modern smart home with an automated Intrusion Detection System. The system includes security cameras, motion sensors, and an AI-powered control pane.jpg" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;margin-right: 10vh;">
             </div> 
 
 
             <div class="image-container" style="display: flex;flex-direction: row; width: 30vh;margin-left: -45vh;margin-top: 5vh;">
-                <img src="/dalle.jpg" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;margin-left: 0vh;">
+                <img src="/skincancer.png" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;margin-left: 0vh;">
             <div class="content-container" ">
                 <div class="subtitle1" style="color:rgb(198, 83, 221);font-size: 4vh; margin-left: 2vh; margin-top: 0vh; width: 50vh;">
-                    <p>Kavach - SOTA IDS Framework</p>
+                    <p>CNN For Skin Cancer Classification</p>
                     <p style="font-size: 3vh; color: rgb(130, 62, 142);">
-                        loremipsumbkb ergdfbvasf asfgadfrh adfbh adfhb adfh adfh adfh adfh adf hadfsh
-                         fgh afgh loremipsumbkb ergdfbvasf asfgadfrh adfbh adfhb adfh adfh adfh adfh adf hadfsh
-                         fgh afgh 
+                      a Convolutional Neural Network 
+                      (CNN) model for skin cancer detection. Built with Python and TensorFlow, 
+                      it analyzes skin images to classify malignancies, aiding early diagnosis with deep learning.
                     </p>
                     <button>
-                        view more
-                    </button>
+                      <a href="https://github.com/Aadhaar-debug/CNN_For_Skin_cancer">View More</a>
+                  </button>
                 </div>
             </div>
             </div>
@@ -129,33 +280,31 @@
                     <p style="margin-right: 3vh;">
                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                        color:rgb(198, 83, 221);font-size: 4vh; margin-left: 2vh; margin-top: 0vh; width: 35vh;">
-                       Kavach - SOTA IDS Framework</p>
+                       Ad Blocker Chrome Extension</p>
                        <p style="font-size: 3vh; color: rgb(130, 62, 142);">
-                        loremipsumbkb ergdfbvasf asfgadfrh adfbh adfhb adfh adfh adfh adfh adf hadfsh
-                         fgh afgh loremipsumbkb ergdfbvasf asfgadfrh adfbh adfhb adfh adfh adfh adfh adf hadfsh
-                         fgh afgh 
+                        A Chrome extension that blocks ads using JavaScript, ensuring a seamless video and post-streaming experience.
+                         It removes intrusive ads with efficient filtering techniques, enhancing browsing speed and user satisfaction. 
                     </p>
                     <button>
-                        view more
-                    </button>
+                      <a href="https://github.com/Aadhaar-debug/Browser_extensions">View More</a>
+                  </button>
                     </p>
                 </div>
-                <img src="/skincancer.png" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;margin-right: 10vh;">
+                <img src="/DALL·E 2025-02-26 22.42.47 - A Chrome browser window displaying a live ad blocker extension in action. The extension interface shows blocked ads in real-time, with a clean, ad-fre.jpg" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;margin-right: 10vh;">
             </div> 
 
             <div class="image-container" style="display: flex;flex-direction: row; width: 30vh;margin-left: -45vh;margin-top: 5vh;">
-                <img src="/dalle.jpg" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;margin-left: 0vh;">
+                <img src="/DALL·E 2025-02-26 22.50.48 - A close-up image of an ESP8266 microcontroller chip with detailed labeling. The chip is mounted on a circuit board with visible electronic components.jpg" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;margin-left: 0vh;">
             <div class="content-container" ">
                 <div class="subtitle1" style="color:rgb(198, 83, 221);font-size: 4vh; margin-left: 2vh; margin-top: 0vh; width: 40vh;">
-                    <p>Kavach - SOTA IDS Framework</p>
+                    <p>ESP8266 Targetted PC Scripts</p>
                     <p style="font-size: 3vh; color: rgb(130, 62, 142);">
-                        loremipsumbkb ergdfbvasf asfgadfrh adfbh adfhb adfh adfh adfh adfh adf hadfsh
-                         fgh afgh loremipsumbkb ergdfbvasf asfgadfrh adfbh adfhb adfh adfh adfh adfh adf hadfsh
-                         fgh afgh 
+                      ESP8266-targeted scripts leveraging network capabilities for deauthentication and internet manipulation.
+                       Built for testing and research, it explores wireless security vulnerabilities and network control using ESP8266 modules.
                     </p>
                     <button>
-                        view more
-                    </button>
+                      <a href="https://github.com/Aadhaar-debug/SOTA_IDS_Framework_Pingfence">View More</a>
+                  </button>
                 </div>
             </div>
             </div>
@@ -166,34 +315,32 @@
                     <p style="margin-right: 3vh;">
                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                        color:rgb(198, 83, 221);font-size: 4vh; margin-left: 2vh; margin-top: 0vh; width: 35vh;">
-                       Kavach - SOTA IDS Framework</p>
+                       Currency Converter Application</p>
                        <p style="font-size: 3vh; color: rgb(130, 62, 142);">
-                        loremipsumbkb ergdfbvasf asfgadfrh adfbh adfhb adfh adfh adfh adfh adf hadfsh
-                         fgh afgh loremipsumbkb ergdfbvasf asfgadfrh adfbh adfhb adfh adfh adfh adfh adf hadfsh
-                         fgh afgh 
+                        Built with Java and XML, performs simple math to convert currency rates in real time. It provides a user-friendly
+                         interface for quick and accurate currency conversions on the go.
                     </p>
                     <button>
-                        view more
-                    </button>
+                      <a href="https://github.com/Aadhaar-debug/Android_Dev_Projects">View More</a>
+                  </button>
                     </p>
                 </div>
-                <img src="/skincancer.png" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;margin-right: 10vh;">
+                <img src="/DALL·E 2025-02-26 22.50.25 - A modern live currency converter software interface displayed on a computer screen. The UI is sleek and minimalistic, showing real-time exchange rates.jpg" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;margin-right: 10vh;">
             </div> 
 
 
             <div class="image-container" style="display: flex;flex-direction: row; width: 30vh;margin-left: -45vh;margin-top: 5vh;">
-                <img src="/dalle.jpg" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;margin-left: 0vh;">
+                <img src="/DALL·E 2025-02-26 22.53.10 - A modern cybersecurity learning app interface displayed on a smartphone screen. The app features an interactive dashboard with hacking tutorials, secu.jpg" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;margin-left: 0vh;">
             <div class="content-container" ">
                 <div class="subtitle1" style="color:rgb(198, 83, 221);font-size: 4vh; margin-left: 2vh; margin-top: 0vh; width: 50vh;">
-                    <p>Kavach - SOTA IDS Framework</p>
+                    <p>Hash - Cybersecurity Learning App</p>
                     <p style="font-size: 3vh; color: rgb(130, 62, 142);">
-                        loremipsumbkb ergdfbvasf asfgadfrh adfbh adfhb adfh adfh adfh adfh adf hadfsh
-                         fgh afgh loremipsumbkb ergdfbvasf asfgadfrh adfbh adfhb adfh adfh adfh adfh adf hadfsh
-                         fgh afgh 
+                      This cybersecurity app, built with Java and XML, integrates the HTB library to guide beginners in ethical hacking. 
+                      It provides structured lessons, hands-on exercises, and Linux-free learning for easy onboarding.
                     </p>
                     <button>
-                        view more
-                    </button>
+                      <a href="https://github.com/Aadhaar-debug/Cybersecurity_training_app">View More</a>
+                  </button>
                 </div>
             </div>
             </div>
@@ -203,18 +350,17 @@
                     <p style="margin-right: 3vh;">
                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                        color:rgb(198, 83, 221);font-size: 4vh; margin-left: 2vh; margin-top: 0vh; width: 35vh;">
-                       Kavach - SOTA IDS Framework</p>
+                       Android Pentesting Tool</p>
                        <p style="font-size: 3vh; color: rgb(130, 62, 142);">
-                        loremipsumbkb ergdfbvasf asfgadfrh adfbh adfhb adfh adfh adfh adfh adf hadfsh
-                         fgh afgh loremipsumbkb ergdfbvasf asfgadfrh adfbh adfhb adfh adfh adfh adfh adf hadfsh
-                         fgh afgh 
+                        This Android pentesting tool, built with C# and Python, extracts EXIF data from photos and videos to 
+                        identify potential threats. It helps detect malicious activities by analyzing metadata for security insights.
                     </p>
                     <button>
-                        view more
-                    </button>
+                      <a href="https://github.com/Aadhaar-debug/Linux-Tools">View More</a>
+                  </button>
                     </p>
                 </div>
-                <img src="/skincancer.png" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;margin-right: 10vh;">
+                <img src="/DALL·E 2025-02-26 22.53.53 - A live Android penetration testing software interface displayed on a smartphone. The app features tools for extracting EXIF data from photos and video (1).jpg" alt="Avatar Image" width="400" height="400" style="border-radius: 25px;margin-right: 10vh;">
             </div>
 
 
@@ -237,7 +383,7 @@
         </div>             
     </div>
     
-    <div style="margin-top: 30vh;" class="fotter">Aadhaar2024</div>
+    <div style="margin-top: 30vh;" class="fotter">Aadhaar2025</div>
 
   </body>
   <script>
